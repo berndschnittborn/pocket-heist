@@ -1,0 +1,33 @@
+@reference "../../app/globals.css";
+
+.siteNav {
+  @apply bg-light px-2 py-4;
+}
+
+.siteNav nav {
+  @apply mx-auto max-w-6xl flex justify-between items-center;
+}
+
+.siteNav h1 {
+  @apply font-bold text-xl;
+}
+
+svg.logo {
+  display: inline-block;
+}
+
+.navRight {
+  @apply flex items-center gap-6;
+}
+
+.userSection {
+  @apply flex items-center gap-3;
+}
+
+.userEmail {
+  @apply text-body text-sm;
+}
+
+.logoutButton {
+  @apply bg-lighter text-body px-3 py-1.5 rounded-lg text-sm hover:bg-primary hover:text-white transition-colors;
+}
