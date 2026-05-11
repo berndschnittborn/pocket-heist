@@ -1,11 +1,17 @@
-export default function RootLayout({
+"use client"
+
+import PublicRoute from '@/components/PublicRoute'
+
+export default function PublicLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
   return (
-    <main className="public">
-      {children}
-    </main>
+    <PublicRoute>
+      <main className="public">
+        {children}
+      </main>
+    </PublicRoute>
   )
 }

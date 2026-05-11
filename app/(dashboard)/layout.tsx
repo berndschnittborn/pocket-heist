@@ -1,15 +1,17 @@
-// components
-import Navbar from "@/components/Navbar"
+"use client"
 
-export default function HeistsLayout({
+import Navbar from "@/components/Navbar"
+import ProtectedRoute from "@/components/ProtectedRoute"
+
+export default function DashboardLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
   return (
-    <>
+    <ProtectedRoute>
       <Navbar />
       <main>{children}</main>
-    </>
+    </ProtectedRoute>
   )
 }
