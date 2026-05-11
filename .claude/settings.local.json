@@ -8,7 +8,8 @@
       "Bash(git remote set-url:*)",
       "Bash(git commit -m \"$\\(cat <<''EOF''\nfeat\\(auth\\): implement authentication system with form components and route protection\n\nAdd comprehensive authentication infrastructure including:\n- LoginForm and SignupForm components with Tailwind styling\n- AuthContext for centralized authentication state management\n- ProtectedRoute and PublicRoute components for route-level access control\n- Update layouts for public and dashboard route groups\n- Refactor authentication pages to use new form components\n- Add Claude Code configuration and project documentation\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
       "Bash(git push:*)",
-      "Bash(git config:*)"
+      "Bash(git config:*)",
+      "Bash(git commit:*)"
     ]
   }
 }
